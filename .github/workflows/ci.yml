@@ -136,7 +136,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Lint
-        uses: DavidAnson/markdownlint-cli2-action@16d9da45919c958a8d1ddccb4bd7028e8848e4f1
+        uses: DavidAnson/markdownlint-cli2-action@ce69f81fedb0ecf1c1b926924b6809069965b3e4
         if: steps.changed.outcome == 'success'
         with:
           command: config
